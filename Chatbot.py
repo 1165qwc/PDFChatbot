@@ -104,7 +104,7 @@ if "file_path" in st.session_state:
 
 # ========================= Read File =========================
 
-base_url = "http://localhost:11434"
+base_url = "http://localhost:8501"
 model = 'llama3.3:3b'
 
 # user_id = st.text_input("Enter your user id", "laxmikant")
