@@ -1,15 +1,17 @@
 import streamlit as st
 
+# Menambahkan CSS dengan beberapa opsi warna
 st.markdown(
     """
     <style>
+    /* Latar belakang aplikasi */
     .stApp {
-        background-color: #1E1E2F;
+        background-color: #1E1E2F; /* Latar belakang abu-abu gelap */
         color: white;
     }
     .stButton>button {
         color: white;
-        background-color: #4CAF50;
+        background-color: #4CAF50;  /* Mengatur warna latar belakang tombol */
     }
     .title {
         color: white;
@@ -28,9 +30,9 @@ st.markdown(
     }
     input {
         color: white !important;
-        background-color: black !important;
+        background-color: black !important; /* Jika ingin kotak input hitam */
     }
-    ::placeholder {
+    ::placeholder { /* Untuk placeholder teks */
         color: white !important;
     }
     </style>
@@ -59,6 +61,7 @@ from langchain_community.document_loaders import PyMuPDFLoader
 
 load_dotenv('./../.env')
 
+# Tampilkan teks dengan warna putih menggunakan kelas CSS
 st.markdown('<div class="title">Chat with Your PDF</div>', unsafe_allow_html=True)
 # st.markdown('<div class="content">Hello', unsafe_allow_html=True)
 
@@ -73,7 +76,7 @@ if uploaded_file is not None:
     with open(file_path, "wb") as f:
         f.write(uploaded_file.getbuffer())
 
-    st.session_state["file_path"] = file_path
+    st.session_state["file_path"] = file_path  # Simpan ke session_state
     st.success(f"File saved to: {file_path}")
 
 # ========================= Upload File =========================
