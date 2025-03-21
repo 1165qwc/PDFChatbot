@@ -1,6 +1,5 @@
 import streamlit as st
 
-# Menambahkan CSS dengan beberapa opsi warna
 st.markdown(
     """
     <style>
