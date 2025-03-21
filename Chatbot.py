@@ -95,7 +95,7 @@ if "file_path" in st.session_state:
 # ========================= Read File =========================
 
 base_url = "http://localhost:11434"
-model = "llama3.2:3b"
+model = "llama3.3"
 
 user_id = "chat_pdf"
 
